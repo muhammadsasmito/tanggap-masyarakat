@@ -7,10 +7,10 @@
 
 include "twitteroauth/twitteroauth.php";
 
-$consumer_key = "s7aasXzcYVRPU3CrmvvWABfjt";
-$consumer_secret = "iYWOOyx1uUdjjwutJli2YkrJgdjY4omYJ8YxIi3ZP6MvSEnWFA";
-$access_token = " 965160998-pDewdbug69LBHrvMZu7jJvk01Omdhzlc7JxCSn5X";
-$access_token_secret = "cVLnkwLYzeAAYv1MQWG2V2k7fT71QsKPa0zvly09YvqBm";
+$consumer_key = "Z33aUqMzyoZhxdNdfNXO4oelk";
+$consumer_secret = "PZ5oNGwQWwk589KmXPO1Y7tFZGfMcmXLCiyOwPvlXxbmgpHcUN";
+$access_token = "965160998-GGw9CySSnwedo9IL1A5dYYlStK4dQ4BIYfuCyyV0";
+$access_token_secret = "b41m3JWV3RNEjVfrWNkOtHngbWeN5plTZGzXXJNjmmM0G";
 
 $twitter = new TwitterOAuth($consumer_key,$consumer_secret,$access_token,$access_token_secret);
 
@@ -66,7 +66,7 @@ if (isset($_POST["query"])) {
 		<div class="col">
 			<div class="card text-center">
 				<div class="card-header card-outline-danger">
-					Tanggapan Negatif
+					Tanggapan Negatif <span class="badge badge-default"> keyword : jng </span>
 				</div>
 			</div>
 			<br>
@@ -85,7 +85,8 @@ if (isset($_POST["query"])) {
 </div>
 <footer class="text-muted text-center">
 		created with <i class="fa fa-heart" aria-hidden="true"></i> Sash @ 2017
+		<br>
 </footer>
-
+<br>
 </body>
 </html>
